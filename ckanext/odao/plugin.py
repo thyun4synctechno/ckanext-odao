@@ -45,6 +45,7 @@ def _login():
                         u'name': user_obj.name,
                         u'fullname': user_obj.fullname,
                         u'image_url': user_obj.image_url,
+                        u'sysadmin': user_obj.sysadmin,
                         u'token': token
                     }
                 }
