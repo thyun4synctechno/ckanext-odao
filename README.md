@@ -1,16 +1,38 @@
-[![Tests](https://github.com//ckanext-odao/workflows/Tests/badge.svg?branch=main)](https://github.com//ckanext-odao/actions)
-
 # ckanext-odao
 
-**TODO:** Put a description of your extension here:  What does it do? What features does it have? Consider including some screenshots or embedding a video!
+오픈마켓 웹서비스에서 ID/Password 기반 사용자 인증 시 CKAN의 사용자 정보를 기반으로 인증을 수행하기 위한 extension
 
+## 디렉토리 구조 
+```
+ckanext-odao
+│   README.md   // this file
+│
+│   setup.cfg, setup.py     //  설치 관련 파일 (플러그인 개발 도구에서 자동 생성)
+│   
+│   MANIFEST.in         //  Extension에 포함된 파일 목록 
+│
+│   requirements.txt, dev-requirements.txt    //  종속 라이브러리 설치용 목록 
+│
+└───ckanext
+    └───odao
+        │   plugin.py   //  plugin 메인 로직 
+```
+
+## 설치 
+```
+cd /home/ubuntu/ckan/lib/default/src/
+git clone https://github.com/thyun4synctechno/ckanext-odao.git
+
+cd ckanext-odao
+pip install -e .
+pip install -r requirements.txt
+```
+
+
+--- 
+## 이하 내용은 샘플로 자동생성된 설명이므로 참고
 
 ## Requirements
-
-**TODO:** For example, you might want to mention here which versions of CKAN this
-extension works with.
-
-If your extension works across different versions you can add the following table:
 
 Compatibility with core CKAN versions:
 
@@ -43,6 +65,7 @@ To install ckanext-odao:
 
 2. Clone the source and install it on the virtualenv
 
+    cd /usr/lib/ckan/default/src/
     git clone https://github.com//ckanext-odao.git
     cd ckanext-odao
     pip install -e .
